@@ -115,7 +115,7 @@ class TestVarasto(unittest.TestCase):
         otettu = self.varasto.ota_varastosta(5)
         self.assertAlmostEqual(otettu, 5)
 
-    ##str
-    #def test_tulostus(self):
-     #   self.assertEqual(str(self.varasto), "saldo = 0, vielä tilaa 10")
+    #str
+    def test_tulostus(self):
+        self.assertEqual(str(self.varasto), "saldo = 0, vielä tilaa 10")
 
