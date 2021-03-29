@@ -82,7 +82,7 @@ class TestVarasto(unittest.TestCase):
     #laitetaan negatiivinen
     def test_laitetaanNeg(self):
         self.varasto.lisaa_varastoon(-2)
-        self.assertAlmostEqual(self.varasto.saldo, 0)
+        self.assertAlmostEqual(self.varasto.saldo, 2)
 
     ##laitetaan liikaa
     def test_laitetaanLiikaa(self):
