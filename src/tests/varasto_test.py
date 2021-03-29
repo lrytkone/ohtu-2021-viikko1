@@ -10,12 +10,12 @@ class TestVarasto(unittest.TestCase):
     ##Vaara alkutilavuus
     def test_setUpVaara(self):
         self.varasto = Varasto(-2)
-        self.assertAlmostEqual(self.varasto.tilavuus, 0)
+        self.assertAlmostEqual(self.varasto.tilavuus, 2)
 
     ##Vaara alkutilavuus ja saldo
     def test_setUpVaaraVaara(self):
         self.varasto = Varasto(-2, -2)
-        self.assertAlmostEqual(self.varasto.tilavuus, 0)
+        self.assertAlmostEqual(self.varasto.tilavuus, 2)
 
     #Alkusaldo 5
     def test_alkuSaldo(self):
@@ -82,7 +82,7 @@ class TestVarasto(unittest.TestCase):
     #laitetaan negatiivinen
     def test_laitetaanNeg(self):
         self.varasto.lisaa_varastoon(-2)
-        self.assertAlmostEqual(self.varasto.saldo, 2)
+        self.assertAlmostEqual(self.varasto.saldo, 0)
 
     ##laitetaan liikaa
     def test_laitetaanLiikaa(self):
